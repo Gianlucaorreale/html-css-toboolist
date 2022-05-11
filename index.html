@@ -4,57 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/Logo.png">
     <link rel="stylesheet" href="css/style.css">
-    
-    <title>Document</title>
+    <link rel="icon" href="img/Logo.png">
+    <title>Toboolist</title>
+
 </head>
 <body>
+    <header>
+       <div class="title">
+           <img class="logo" src="img/Logo.png" alt="Toboolist">
+           <h1>Toboolist</h1>
 
-   <header>
-
-       <div class="container">
-           <img class="vertical-middle" src="img/Logo.png" alt="logo">
-           <h1 class="title">Toboolist</h1>
        </div>
+    </header>
     
-   </header>
-      
-     <main class="layover">
-       <div class="contained">
-        <div>
-            <button class="button-blue" >Add Task</button>
-            <button class="button-white" >Add section</button>
-        </div>
- 
-        <div class="new-task">
-            <h2> <span class="arrow">&#129171;</span> New Task </h2>
-            <h3> <span class="check">&#10003;</span> Quarterly News letter<button class="editorial">Editorial</button></h3> 
-            
-        </div>
-        <div class="today">
-         <h2> <span class="arrow">&#129171;</span> Today </h2>
-         <h3> <span class="check">&#10003;</span> Recruiting blog post<button class="editorial">Editorial</button></h3>  
-         <h3><span class="check">&#10003;</span>Mobile app Luaunch <button class="q1-goals">Q1 Goals</button></h3>
-         <h3><span class="cross">&#735;</span>Interview Jhon H. <button class="recruiting">Recruiting</button></h3>
-         <h3><span class="check">&#10003;</span>Summit update to mobile storefronts <button class="mobile">Mobile</button></h3>
- 
-        </div>
- 
-        <div class="upcoming">
-         <h2> <span class="arrow">&#129171;</span> Upcoming </h2>
-         <h3><span class="cross">&#735;</span>Schedule Meeting with Alex</h3>
-         <h3><span class="check">&#10003;</span>Homepage refresh <button class="website">website</button></h3>
-         <h3><span class="check">&#10003;</span>Onboard new Sales team members <button class="sales">sales</button></h3>
-         <h3><span class="check">&#10003;</span>Review editorial calendar <button class="editorial">Editorial</button></h3>
-        </div>
-       </div>
-    </main>
 
-       
-   
-           
-       
-   
+    <main>
+    <div class="container">
+       <section id="actions">
+           <button class="button-blue"><span>Add Task</span></button>
+           <button class="button-white"><span>Add Section</span></button>
+       </section>
+       <section>
+         <ul>
+             <li>
+                 <h3>&blacktriangledown;New Task</h3>
+                 <ul>
+                     <li class="task-item"> <span class="task-status status-done">&check;</span><span class="task-text">Quarterly Newsletter</span>
+                        <span class="badge badge-blue">Editorial</span>
+                    </li>
+                 </ul>
+             </li>
+             <li>
+                <h3>&blacktriangledown;Today</h3>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-done">&check;</span><span class="task-text">Recruiting blog post</span>
+                       <span class="badge badge-blue">Editorial</span>
+                   </li>
+                </ul>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-done">&check;</span><span class="task-text">Mobile app Luaunch</span>
+                       <span class="badge badge-violet">Q1 Goals</span>
+                   </li>
+                </ul>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-undone">&cross;</span><span class="task-text">Interview Jhon H.</span>
+                       <span class="badge badge-green">Recruiting</span>
+                   </li>
+                </ul>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-done">&check;</span><span class="task-text">Summit Update to mobile storefronts</span>
+                       <span class="badge badge-orange">Mobile</span>
+                   </li>
+                </ul>
+            </li><li>
+                <h3>&blacktriangledown;Upcoming</h3>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-undone">&cross;</span><span class="task-text">Schedule Meeting with Alex</span>
+                       
+                   </li>
+                </ul>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-done">&check;</span><span class="task-text">Homepage refresh</span>
+                       <span class="badge badge-purple">Website</span>
+                   </li>
+                </ul>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-done">&check;</span><span class="task-text">Onboard New Sales Team members</span>
+                       <span class="badge badge-light-green">Sales</span>
+                   </li>
+                </ul>
+                <ul>
+                    <li class="task-item"> <span class="task-status status-done">&check;</span><span class="task-text">Review Editorial calendar</span>
+                       <span class="badge badge-blue">Editorial</span>
+                   </li>
+                </ul>
+            </li>
+         </ul>
+       </section>
+
+    
+        
+    </div>
+
+    </main>
 </body>
 </html>
